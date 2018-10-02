@@ -1,0 +1,120 @@
+extends layout
+
+block content
+  h2.text-center.mt-4.pt-5 Please Enter The Details(* required)
+  .col-lg-6.offset-lg-3.col-md-8.offset-md-2.col-sm-12.col-xs-12
+      form.p-3
+        h2.mt-2.mb-4 Title
+        .form-group
+          label(for='exampleFormControlInput1') Date of Report
+          input#exampleFormControlInput1.form-control(type='date', placeholder='name@example.com')
+        .form-group
+          label(for='exampleFormControlInput1') Date of Report
+          input#exampleFormControlInput1.form-control(type='date', placeholder='name@example.com')
+        .form-group
+          label(for='exampleFormControlInput1') Report Type
+          select#inputGroupSelect02.form-control
+            option(selected='') Initial FLow
+        .form-group.mb-3
+          label(for='exampleFormControlInput1') Choose Gender
+          select#inputGroupSelect02.form-control
+            option(selected='') Choose Your Gender
+            option(value='1') Male
+            option(value='2') Female
+        .form-group.mb-3
+          label(for='exampleFormControlInput1') Birth Date
+          input#exampleFormControlInput1.form-control(type='date', placeholder='Birht Date')
+        .form-group.mb-3
+          label(for='exampleFormControlInput1') Birth Weight
+          input#exampleFormControlInput1.form-control(type='number', placeholder='')
+
+        h2.mt-5.mb-4.pt-5 Hospital/Clinic Information
+
+        .form-group.mb-3
+          label(for='exampleFormControlInput1') Name of person reporting
+          input#exampleFormControlInput1.form-control(type='text', placeholder='Enter Name Here')
+        .form-group.mb-3
+          label(for='exampleFormControlInput1') Designation
+          br
+          input#exampleFormControlInput1.form-control(type='text', placeholder='Enter Designation')
+        .form-group
+          label(for='exampleFormControlSelect1') Seal of Hospital/Clinic
+          select#exampleFormControlSelect1.form-control
+            option Yes
+            option No
+        .form-group
+          label(for='exampleFormControlInput1') Email Address
+          input#exampleFormControlInput1.form-control(type='email', placeholder='name@example.com')
+        .form-group
+          label(for='exampleFormControlInput1') Contact Number
+          input#exampleFormControlInput1.form-control(type='tel', placeholder='Enter Your Contact Number ')
+        .form-group
+          label(for='exampleFormControlTextarea1') Medications Used in last 3 Weeks
+          textarea#exampleFormControlTextarea1.form-control(rows='3', placeholder="If any describe here")
+        
+        h2.mt-5.mb-4.pt-5 Relevant past history(Including AAA against bbb)
+
+        .form-group
+          label(for='exampleFormControlTextarea1') Allergies
+          textarea#exampleFormControlTextarea1.form-control(rows='3', placeholder="If yes specify here")
+
+
+        h2.mt-5.mb-4.pt-5 Relevant family history 
+      
+        .form-group
+          label(for='exampleFormControlTextarea1') If yes specify
+          textarea#exampleFormControlTextarea1.form-control(rows='3')
+
+
+        h2.mt-5.mb-4.pt-5 Concurrent illness
+      
+        .form-group
+          label(for='exampleFormControlTextarea1') If yes specify
+          textarea#exampleFormControlTextarea1.form-control(rows='3')
+
+
+        h2.mt-5.mb-4.pt-5 AAA details of Ddd
+        .form-group.mb-3
+          label(for='exampleFormControlInput1') Date of administration
+          input#exampleFormControlInput1.form-control(type='date', placeholder='')
+        .form-group.mb-3
+          label(for='exampleFormControlInput1') Time of administration
+          input#exampleFormControlInput1.form-control(type='time', placeholder='')
+        .form-group
+          label(for='exampleFormControlInput1') Route of administration
+          input#exampleFormControlInput1.form-control(type='text', placeholder=' ')
+        .form-group
+          label(for='exampleFormControlInput1') Anatomical site of administration
+          input#exampleFormControlInput1.form-control(type='text', placeholder=' ')
+        .form-group
+          label(for='exampleFormControlInput1') Batch No.
+          input#exampleFormControlInput1.form-control(type='text', placeholder=' ')
+        .form-group
+          label(for='exampleFormControlTextarea1') Any adverse event within 30 Min, post AAA?
+          textarea#exampleFormControlTextarea1.form-control(rows='3', placeholder="If yes specify here")
+        .form-group.mb-3
+          label(for='exampleFormControlSelect1') Concomitant eee(s) administered at the same time, as applicable:
+          select#inputGroupSelect02.form-control
+            option(value="2",selected) Yes
+            option(value='1') No
+
+        .form-group
+          label(for='exampleFormControlSelect1') Event meets case definition
+          select#exampleFormControlSelect1.form-control
+            option Level 1: Criteria as specified in the case definition for induration at or near injection site
+            option Level 2: Criteria as specified in the case definition for induration at or near injection site
+        .form-group.mb-3
+          label(for='exampleFormControlSelect1') Event meets case definition
+          select#inputGroupSelect02.custom-select
+            option(selected='') Choose Type
+            option(value='1') One
+            option(value='2') Two
+            option(value='3') Three
+        .form-group
+          label(for='exampleFormControlTextarea1') Descirbe Yourself
+          textarea#exampleFormControlTextarea1.form-control(rows='3')
+        .form-group
+          label(for='exampleFormControlTextarea1') Descirbe Yourself
+          textarea#exampleFormControlTextarea1.form-control(rows='3')
+        .form-group
+          button(type="submit").btn.form-control Submit
