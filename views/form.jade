@@ -7,10 +7,7 @@ block content
         h2.mt-2.mb-4 Title
         .form-group
           label(for='exampleFormControlInput1') Date of Report
-          input#exampleFormControlInput1.form-control(type='date', placeholder='name@example.com')
-        .form-group
-          label(for='exampleFormControlInput1') Date of Report
-          input#exampleFormControlInput1.form-control(type='date', placeholder='name@example.com')
+          input#exampleFormControlInput1.form-control(type='date', placeholder='DD/MM/YY')
         .form-group
           label(for='exampleFormControlInput1') Report Type
           select#inputGroupSelect02.form-control
@@ -23,15 +20,15 @@ block content
             option(value='2') Female
         .form-group.mb-3
           label(for='exampleFormControlInput1') Birth Date
-          input#exampleFormControlInput1.form-control(type='date', placeholder='Birht Date')
+          input#exampleFormControlInput1.form-control(type='date', placeholder='DD/MM/YY')
         .form-group.mb-3
-          label(for='exampleFormControlInput1') Birth Weight
+          label(for='exampleFormControlInput1') Birth Weight (kg)
           input#exampleFormControlInput1.form-control(type='number', placeholder='')
 
         h2.mt-5.mb-4.pt-5 Hospital/Clinic Information
 
         .form-group.mb-3
-          label(for='exampleFormControlInput1') Name of person reporting
+          label(for='exampleFormControlInput1') Name of reporting person
           input#exampleFormControlInput1.form-control(type='text', placeholder='Enter Name Here')
         .form-group.mb-3
           label(for='exampleFormControlInput1') Designation
@@ -114,7 +111,4 @@ block content
           label(for='exampleFormControlTextarea1') Descirbe Yourself
           textarea#exampleFormControlTextarea1.form-control(rows='3')
         .form-group
-          label(for='exampleFormControlTextarea1') Descirbe Yourself
-          textarea#exampleFormControlTextarea1.form-control(rows='3')
-        .form-group
-          button(type="submit").btn.form-control Submit
+          button(type="submit").btn.form-control.bg-primary.text-white Submit
